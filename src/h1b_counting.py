@@ -52,8 +52,8 @@ def getCleanSOCcode(SOCcode):
 def isNotSOCcode(SOCcode):
     """
     :param SOCcode: cleaned SOC code
-    :return: determine if the SOC code is correct. if the first 2 character of the input are numerical numbers and
-             and the total length of the input equals to 7 return True
+    :return: determine if the SOC code is not the correct one. if the first 2 character of the input are not numerical numbers and
+             and the total length of the input does not equals to 7 return True
     """
     curSOCcode = getCleanSOCcode(SOCcode)
     if (len(curSOCcode) != 7) | (not curSOCcode[:2].isdigit()):
